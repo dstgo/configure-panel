@@ -2,7 +2,7 @@
 	<div class="navbar">
 		<div class="left-side" :style="{ width: appStore.menuWidth + 'px' }">
 			<a-space>
-				<img alt="logo" :src="$logo" style="width: 50px; height: 50px" />
+				<img alt="logo" src="@/assets/images/logo.png" style="width: 50px; height: 50px" />
 				<a-typography-title :style="{ margin: 0, fontSize: '18px', width: '100%', minWidth: titleWidth() }" :heading="5" :ellipsis="true">
 					{{ appStore.currentAppinfo.title }}
 				</a-typography-title>
@@ -37,7 +37,7 @@
 				<a-dropdown trigger="click">
 					<a-avatar :size="32" :style="{ marginRight: '8px', cursor: 'pointer' }">
 						<img v-if="avatar" alt="avatar" :src="avatar" />
-						<img v-else alt="avatar" :src="$logo" />
+						<img v-else alt="avatar" src="@/assets/images/logo.png" />
 					</a-avatar>
 					<template #content>
 						<a-doption>

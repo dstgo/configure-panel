@@ -28,7 +28,6 @@ app.use(directive);
 
 const appStore = useAppStore();
 
-app.config.globalProperties.$logo = appStore.logo;
 app.config.globalProperties.$rurl = formatUrl;
 app.config.globalProperties.$formatTime = formatTime;
 app.config.globalProperties.$parseTime = parseTime;
