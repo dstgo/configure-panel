@@ -69,7 +69,6 @@
 				</a-space>
 			</template>
 		</a-table>
-		<ResourcePermission ref="rp"></ResourcePermission>
 	</div>
 </template>
 

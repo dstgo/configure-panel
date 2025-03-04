@@ -1,4 +1,4 @@
-import defaultSettings from '@/config/settings.json';
+import defaultSettings from '@/config/defaultSetting';
 import { App, Home } from '@/router/types';
 import { generate, getRgbStr } from '@arco-design/color';
 import { defineStore } from 'pinia';
@@ -16,7 +16,6 @@ const useAppStore = defineStore('app', {
 		homes: new Map(),
 		isLoading: false,
 		loadTitle: '',
-		name: '',
 		changePasswordType: 'password'
 	}),
 	getters: {
