@@ -51,7 +51,6 @@
 			</li>
 		</ul>
 	</div>
-	<Userinfo :show="showUserinfoVisible" @cancel="showUserinfoVisible = false"></Userinfo>
 </template>
 
 <script lang="tsx" setup>
@@ -60,7 +59,6 @@ import { useAppStore, useUserStore } from '@/store';
 import { useDark, useFullscreen, useToggle } from '@vueuse/core';
 import App from './app.vue';
 
-const showUserinfoVisible = ref(false);
 const appStore = useAppStore();
 
 const userStore = useUserStore();

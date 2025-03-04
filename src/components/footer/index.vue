@@ -14,7 +14,8 @@ const appStore = useAppStore();
 	align-items: center;
 	justify-content: center;
 	height: 40px;
-	color: var(--color-text-2);
+	color: var(--color-text-3);
+	font-size: 11px;
 	text-align: center;
 }
 </style>

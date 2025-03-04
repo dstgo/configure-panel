@@ -26,7 +26,6 @@ export interface Dictionary {
 }
 
 export interface AppState extends AppThem {
-	name: string;
 	colorWeak: boolean;
 	navbar: boolean;
 	menu: boolean;
@@ -40,8 +39,10 @@ export interface AppState extends AppThem {
 	apps: App[];
 	homes: Map<string, Home>;
 	app: string;
+	name: string;
 	title: string;
 	desc: string;
+	subDesc: string;
 	logo: string;
 	isLoading: boolean;
 	loadTitle: string;
@@ -49,5 +50,6 @@ export interface AppState extends AppThem {
 	changePasswordType: string;
 	watermark?: string;
 	dictionaries?: Record<string, Dictionary>;
+
 	[key: string]: unknown;
 }

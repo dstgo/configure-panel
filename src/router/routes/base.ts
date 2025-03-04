@@ -31,10 +31,22 @@ export const NOT_FOUND_ROUTE: RouteRecordRaw = {
 };
 
 export const LOGIN_ROUTE: RouteRecordRaw = {
-	path: '/login',
-	name: 'login',
-	component: () => import('@/views/login/index.vue'),
+	path: '/auth',
+	name: 'auth',
+	redirect: '/auth/login',
+	component: () => import('@/views/auth/index.vue'),
 	meta: {
 		requiresAuth: false
-	}
+	},
+	children: [
+		{
+			path: 'login',
+			name: 'login',
+			component: () => import('@/views/auth/components/login.vue'),
+			meta: {
+				requiresAuth: false,
+				hideInMenu: true
+			}
+		}
+	]
 };

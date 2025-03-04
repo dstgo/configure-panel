@@ -57,7 +57,6 @@
 				@page-size-change="pageSizeChange"
 			/>
 		</a-space>
-		<ResourcePermission ref="rp"></ResourcePermission>
 	</div>
 </template>
 
