@@ -43,7 +43,6 @@ export interface AppState extends AppThem {
 	title: string;
 	desc: string;
 	subDesc: string;
-	logo: string;
 	isLoading: boolean;
 	loadTitle: string;
 	userSetting?: string;

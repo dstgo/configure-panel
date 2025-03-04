@@ -11,7 +11,6 @@ export default {
 	globalSettings: false,
 	device: 'desktop',
 	tabBar: true,
-	logo: '/src/assets/images/logo.png',
 	name: 'Wilson Configure Panel',
 	title: 'Wilson Configure Panel',
 	desc: '开源的饥荒游戏平台，轻松搭建属于您的游戏集群',

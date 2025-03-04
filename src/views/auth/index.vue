@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div class="logo">
-			<img alt="logo" style="width: 40px" :src="$logo" />
+			<img alt="logo" style="width: 40px" src="@/assets/images/logo.png" />
 			<div class="logo-text">{{ appStore.name }}</div>
 		</div>
 		<div class="login-box">
